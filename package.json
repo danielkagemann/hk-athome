@@ -2,14 +2,20 @@
   "name": "hk-athome",
   "version": "1.0.0",
   "description": "simple at home accessory base on switch using hap-nodejs",
-  "main": "index.js",
   "author": "Daniel Kagemann",
   "license": "MIT",
   "dependencies": {
     "hap-nodejs": "^0.10.4"
   },
   "scripts": {
-    "start": "node index.js",
-    "debug": "DEBUG=HAP-NodeJS:* yarn start"
+    "clean": "rimraf ./build",
+    "build": "yarn clean && tsc",
+    "start": "yarn build && node build/athome.js"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3",
+    "@types/node": "10.17.19",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.8.2"
   }
 }
