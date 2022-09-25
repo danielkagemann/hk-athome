@@ -23,7 +23,7 @@ const accessoryUuid = uuid.generate("hap.kagemann.athome");
 const accessory = new Accessory("Anwesend", accessoryUuid);
 const switchService = new Service.Switch('Anwesend');
 
-HAPStorage.setCustomStoragePath("/home");
+HAPStorage.setCustomStoragePath(process.env.STORAGEPATH ?? '.');
 
 // 'On' characteristic is required
 const onCharacteristic = switchService.getCharacteristic(Characteristic.On);
