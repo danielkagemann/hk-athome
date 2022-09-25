@@ -57,7 +57,7 @@ All done.
 
 ## Authors
 
-- [@danielkagemann](https://www.github.com/danielkagemann)
+[@danielkagemann](https://www.github.com/danielkagemann)
 
 
 ## Appendix
