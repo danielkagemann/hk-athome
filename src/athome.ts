@@ -23,7 +23,16 @@ const accessoryUuid = uuid.generate("hap.kagemann.athome");
 const accessory = new Accessory("Anwesend", accessoryUuid);
 const switchService = new Service.Switch('Anwesend');
 
-HAPStorage.setCustomStoragePath(process.env.STORAGEPATH ?? '.');
+let path = process.env.HAPSTORAGE ?? '';
+
+if (path.length > 0 && path[path.length-1] !== '/') {
+    path += '/';
+}
+
+console.log('hk-athome v1.0.0');
+console.log('storage folder ', path);
+
+HAPStorage.setCustomStoragePath(path);
 
 // 'On' characteristic is required
 const onCharacteristic = switchService.getCharacteristic(Characteristic.On);
@@ -56,5 +65,4 @@ accessory.publish({
     category: Categories.SWITCH, // value here defines the symbol shown in the pairing screen
 });
 
-console.log('hk-athome v1.0.0');
 console.log("thanks. setup done!");

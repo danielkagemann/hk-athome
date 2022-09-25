@@ -33,6 +33,13 @@ Start the server
   yarn start
 ```
 
+Deploy to /homekit. This copies all data to /homekit.
+
+```bash
+  yarn deploy
+```
+
+Please ensure that you set the HAPSTORAGE environment to /homekit. 
 
 ## Screenshots
 
