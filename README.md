@@ -14,7 +14,7 @@ uses the hap-nodejs dependency for the homkit protocol work.
 Clone the project
 
 ```bash
-  git clone git@github.com:danielkagemann/hk-athome.git
+  git clone https://github.com/danielkagemann/hk-athome.git
 ```
 
 Go to the project directory
