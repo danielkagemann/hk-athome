@@ -7,8 +7,6 @@ if someone is at home (on) or not(off).
 uses the hap-nodejs dependency for the homkit protocol work.
 
 
-
-
 ## Run Locally
 
 Clone the project
@@ -53,11 +51,6 @@ Select the accessory type you want. Defaults to Switch.
 All done.  
 
 ![success](screens/success.jpg)
-
-
-## Authors
-
-[@danielkagemann](https://www.github.com/danielkagemann)
 
 
 ## Appendix

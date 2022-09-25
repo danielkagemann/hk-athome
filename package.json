@@ -9,8 +9,8 @@
   },
   "scripts": {
     "clean": "rimraf ./build",    "build": "yarn clean && tsc",
-    "start": "yarn build; node build/athome.js&",
-    "deploy": "STORAGEPATH=/homekit yarn build; cp build/athome.js /homekit"
+    "start": "STORAGEPATH=/homekit/ yarn build; node build/athome.js&",
+    "deploy": "yarn build; cp build/athome.js /homekit"
   },
   "devDependencies": {
     "typescript": "^3.8.3",
