@@ -39,7 +39,6 @@ Deploy to /homekit. This copies all data to /homekit.
   yarn deploy
 ```
 
-Please ensure that you set the HAPSTORAGE environment to /homekit. 
 
 ## Screenshots
 
