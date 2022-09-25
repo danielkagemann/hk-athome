@@ -38,16 +38,20 @@ Start the server
 
 ## Screenshots
 
-Add a new device. You have to ignore QR Camera and select "code input".<br/>
+Add a new device. You have to ignore QR Camera and select "code input".  
+
 ![add](screens/add.jpg)
 
-Because of a virtual accessory which is not certified we have to use pin input instead of QR code. <br/>
+Because of a virtual accessory which is not certified we have to use pin input instead of QR code.  
+
 ![code](screens/code.jpg)
 
-Select the accessory type you want. Defaults to Switch.<br/>
+Select the accessory type you want. Defaults to Switch.  
+
 ![accessory](screens/accessory.jpg)
 
-All done.<br/>
+All done.  
+
 ![success](screens/success.jpg)
 
 

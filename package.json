@@ -10,7 +10,7 @@
   "scripts": {
     "clean": "rimraf ./build",
     "build": "yarn clean && tsc",
-    "start": "yarn build && node build/athome.js"
+    "start": "yarn build; node build/athome.js&"
   },
   "devDependencies": {
     "typescript": "^3.8.3",
