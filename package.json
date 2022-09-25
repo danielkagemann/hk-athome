@@ -10,8 +10,8 @@
   "scripts": {
     "clean": "rimraf ./build",
     "build": "yarn clean && tsc",
-    "start": "yarn build; node build/athome.js&",
-    "deploy": "cp build/athome.js /homekit"
+    "start": "yarn build; node build/athome.js",
+    "deploy": "cp build/athome.js /homekit; cp -r node_modules/ /homekit/"
   },
   "devDependencies": {
     "typescript": "^3.8.3",

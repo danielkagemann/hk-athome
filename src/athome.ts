@@ -23,14 +23,18 @@ const accessoryUuid = uuid.generate("hap.kagemann.athome");
 const accessory = new Accessory("Anwesend", accessoryUuid);
 const switchService = new Service.Switch('Anwesend');
 
-let path = process.env.HAPSTORAGE ?? '';
+// parse arguments for storage folder
+const argv = process.argv.slice(2);
+let path = argv.length > 0 ? argv[0] : '';
 
 if (path.length > 0 && path[path.length-1] !== '/') {
     path += '/';
 }
 
-console.log('hk-athome v1.0.0');
+console.log('------------------------------------------------------');
+console.log('homekit-athome v1.0');
 console.log('storage folder ', path);
+console.log('------------------------------------------------------');
 
 HAPStorage.setCustomStoragePath(path);
 
