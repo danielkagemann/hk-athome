@@ -12,6 +12,7 @@ import {
     CharacteristicGetCallback,
     CharacteristicSetCallback,
     CharacteristicValue,
+    HAPStorage,
     Service,
     uuid
 } from "hap-nodejs";
@@ -21,6 +22,8 @@ let currentSwitchValue: boolean = false;
 const accessoryUuid = uuid.generate("hap.kagemann.athome");
 const accessory = new Accessory("Anwesend", accessoryUuid);
 const switchService = new Service.Switch('Anwesend');
+
+HAPStorage.setCustomStoragePath("/home");
 
 // 'On' characteristic is required
 const onCharacteristic = switchService.getCharacteristic(Characteristic.On);
